@@ -215,7 +215,7 @@ contract Unlock is
       _maxNumberOfKeys,
       _lockName
     );
-    createUpgradeableLock(_calldata);
+    return createUpgradeableLock(_calldata);
   }
 
   /**

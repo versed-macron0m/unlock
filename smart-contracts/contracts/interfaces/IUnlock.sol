@@ -54,7 +54,7 @@ interface IUnlock
   * @return address of the create lock
   */
   function createUpgradeableLock(
-    bytes _calldata
+    bytes memory _calldata
   ) external returns(address);
 
   /**
