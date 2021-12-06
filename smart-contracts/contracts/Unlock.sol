@@ -193,9 +193,35 @@ contract Unlock is
   }
 
   /**
-  * @notice Create lock
+  * @dev Create lock
   * This deploys a lock for a creator. It also keeps track of the deployed lock.
-  * @param data bytes containing the call to initialize the lock template
+  * @param _tokenAddress set to the ERC20 token address, or 0 for ETH.
+  * @param _salt DEPRECATED - an identifier for the Lock unique for the user which was used with past `create2`.
+  */
+  function createLock(
+    uint _expirationDuration,
+    address _tokenAddress,
+    uint _keyPrice,
+    uint _maxNumberOfKeys,
+    string calldata _lockName,
+    bytes12 _salt 
+  ) external returns(address) {
+    bytes memory _calldata = abi.encodeWithSignature(
+      'initialize(address,uint256,address,uint256,uint256,string)',
+      msg.sender,
+      _expirationDuration,
+      _tokenAddress,
+      _keyPrice,
+      _maxNumberOfKeys,
+      _lockName
+    );
+    createUpgradeableLock(_calldata);
+  }
+
+  /**
+  * @dev Create a lock using an Upgradeable Proxy
+  * Similar to `createLock`, this is used to deploys and keep track of a lock.
+  * @param _calldata bytes containing the encoded call to initialize the lock
   * @dev this call is passed as encoded function - for instance:
   *  bytes memory data = abi.encodeWithSignature(
   *    'initialize(address,uint256,address,uint256,uint256,string)',
@@ -206,17 +232,19 @@ contract Unlock is
   *    _maxNumberOfKeys,
   *    _lockName
   *  );
+  * This may be implemented as a sequence ID or with RNG. It's used with `create2`
+  * to know the lock's address before the transaction is mined.
   * @return address of the create lock
   */
-  function createLock(
-    bytes memory data
+  function createUpgradeableLock(
+    bytes memory _calldata
   ) public returns(address)
   {
     require(proxyAdminAddress != address(0), "proxyAdmin is not set");
     require(publicLockAddress != address(0), 'MISSING_LOCK_TEMPLATE');
 
     // deploy a proxy pointing to impl
-    TransparentUpgradeableProxy proxy = new TransparentUpgradeableProxy(publicLockAddress, proxyAdminAddress, data);
+    TransparentUpgradeableProxy proxy = new TransparentUpgradeableProxy(publicLockAddress, proxyAdminAddress, _calldata);
     address payable newLock = payable(address(proxy));
 
     // assign the new Lock

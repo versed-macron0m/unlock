@@ -24,9 +24,7 @@ interface IUnlock
   * @dev Create lock
   * This deploys a lock for a creator. It also keeps track of the deployed lock.
   * @param _tokenAddress set to the ERC20 token address, or 0 for ETH.
-  * @param _salt an identifier for the Lock, which is unique for the user.
-  * This may be implemented as a sequence ID or with RNG. It's used with `create2`
-  * to know the lock's address before the transaction is mined.
+  * @param _salt DEPRECATED - an identifier for the Lock unique for the user which was used with past `create2`.
   */
   function createLock(
     uint _expirationDuration,
@@ -35,6 +33,28 @@ interface IUnlock
     uint _maxNumberOfKeys,
     string calldata _lockName,
     bytes12 _salt
+  ) external returns(address);
+
+  /**
+  * @dev Create a lock with a proxy
+  * This deploys and keeps track of a lock - similarly to `createLock` - using and Upgradeable proxy 
+  * @param _calldata bytes containing the encoded call to initialize the lock
+  * @dev this call is passed as encoded function - for instance:
+  *  bytes memory data = abi.encodeWithSignature(
+  *    'initialize(address,uint256,address,uint256,uint256,string)',
+  *    msg.sender,
+  *    _expirationDuration,
+  *    _tokenAddress,
+  *    _keyPrice,
+  *    _maxNumberOfKeys,
+  *    _lockName
+  *  );
+  * This may be implemented as a sequence ID or with RNG. It's used with `create2`
+  * to know the lock's address before the transaction is mined.
+  * @return address of the create lock
+  */
+  function createUpgradeableLock(
+    bytes _calldata
   ) external returns(address);
 
   /**
