@@ -21,7 +21,8 @@ interface IUnlock
   function proxyAdminAddress() external view;
 
   /**
-  * @dev Create lock
+  * @dev [DEPRECATED] Create lock
+  * Use `createUpgradeableLock` instead
   * This deploys a lock for a creator. It also keeps track of the deployed lock.
   * @param _tokenAddress set to the ERC20 token address, or 0 for ETH.
   * @param _salt DEPRECATED - an identifier for the Lock unique for the user which was used with past `create2`.
@@ -39,6 +40,7 @@ interface IUnlock
   * @dev Create a lock with a proxy
   * This deploys and keeps track of a lock - similarly to `createLock` - using and Upgradeable proxy 
   * @param _calldata bytes containing the encoded call to initialize the lock
+  * @param _version the version number of the Lock template to deploy
   * @dev this call is passed as encoded function - for instance:
   *  bytes memory data = abi.encodeWithSignature(
   *    'initialize(address,uint256,address,uint256,uint256,string)',
@@ -54,7 +56,8 @@ interface IUnlock
   * @return address of the create lock
   */
   function createUpgradeableLock(
-    bytes memory _calldata
+    bytes memory _calldata,
+    uint16 _version
   ) external returns(address);
 
   /**

@@ -215,7 +215,8 @@ contract Unlock is
       _maxNumberOfKeys,
       _lockName
     );
-    return createUpgradeableLock(_calldata);
+    // always create a version 9
+    return createUpgradeableLock(_calldata, 9);
   }
 
   /**
@@ -237,14 +238,17 @@ contract Unlock is
   * @return address of the create lock
   */
   function createUpgradeableLock(
-    bytes memory _calldata
+    bytes memory _calldata,
+    uint16 _version
   ) public returns(address)
   {
     require(proxyAdminAddress != address(0), "proxyAdmin is not set");
     require(publicLockAddress != address(0), 'MISSING_LOCK_TEMPLATE');
 
+    address publicLockTemplate = _publicLockImpls[_version];
+
     // deploy a proxy pointing to impl
-    TransparentUpgradeableProxy proxy = new TransparentUpgradeableProxy(publicLockAddress, proxyAdminAddress, _calldata);
+    TransparentUpgradeableProxy proxy = new TransparentUpgradeableProxy(publicLockTemplate, proxyAdminAddress, _calldata);
     address payable newLock = payable(address(proxy));
 
     // assign the new Lock
