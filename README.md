@@ -142,3 +142,5 @@ Thank you to all the Members of our lock as well!
 You can easily join this list by clicking on the ❤️ Sponsor button (it's free!) at the top of this page too.
 
 ![Members](https://member-wall.julien51.now.sh/api/members?locks=0xB0114bbDCe17e0AF91b2Be32916a1e236cf6034F&maxWidth=1000)
+
+Contracts will be audited by Akira.
