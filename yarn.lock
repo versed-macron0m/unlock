@@ -12525,7 +12525,7 @@ __metadata:
     eslint: 8.6.0
     eslint-config-standard: 16.0.3
     eth-sig-util: 2.5.4
-    ethereumjs-util: 6.2.1
+    ethereumjs-util: 7.1.4
     ethers: 5.5.2
     express: 4.17.2
     express-jwt: 6.1.0
@@ -23732,6 +23732,19 @@ __metadata:
     ethjs-util: 0.1.6
     rlp: ^2.2.3
   checksum: e3cb4a2c034a2529281fdfc21a2126fe032fdc3038863f5720352daa65ddcc50fc8c67dbedf381a882dc3802e05d979287126d7ecf781504bde1fd8218693bde
+  languageName: node
+  linkType: hard
+
+"ethereumjs-util@npm:7.1.4":
+  version: 7.1.4
+  resolution: "ethereumjs-util@npm:7.1.4"
+  dependencies:
+    "@types/bn.js": ^5.1.0
+    bn.js: ^5.1.2
+    create-hash: ^1.1.2
+    ethereum-cryptography: ^0.1.3
+    rlp: ^2.2.4
+  checksum: ccfd9208bfe9205af124a9138c5a90db46cd2fcacf4b80f17f67915381c03253aa2fb90ead9e0b53d9a6fcfeed4310e5dfa8dc516ca2846d16baf81d605cd8c2
   languageName: node
   linkType: hard
 
