@@ -41,7 +41,7 @@
     "@unlock-protocol/eslint-config": "workspace:./packages/eslint-config",
     "babel-eslint": "10.1.0",
     "bignumber.js": "9.0.2",
-    "chai": "4.3.4",
+    "chai": "4.3.6",
     "eslint": "8.4.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
