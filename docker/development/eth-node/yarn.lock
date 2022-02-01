@@ -949,7 +949,7 @@ __metadata:
     "@unlock-protocol/unlock-js": 0.20.4
     cross-fetch: 3.1.5
     ethers: 5.5.4
-    hardhat: 2.8.0
+    hardhat: 2.8.3
     hardhat-erc1820: 0.1.0
   languageName: unknown
   linkType: soft
@@ -1874,20 +1874,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ethereumjs-util@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "ethereumjs-util@npm:7.1.0"
-  dependencies:
-    "@types/bn.js": ^5.1.0
-    bn.js: ^5.1.2
-    create-hash: ^1.1.2
-    ethereum-cryptography: ^0.1.3
-    ethjs-util: 0.1.6
-    rlp: ^2.2.4
-  checksum: bdbf89021782e921a2e25e868d6a70e8c684616bc4d5b722396773424e406810007235ed0872d27af272b1dede17a9d32415a0f88743dee699762d8de75adde8
-  languageName: node
-  linkType: hard
-
 "ethereumjs-util@npm:^7.1.1, ethereumjs-util@npm:^7.1.2, ethereumjs-util@npm:^7.1.3":
   version: 7.1.3
   resolution: "ethereumjs-util@npm:7.1.3"
@@ -2244,9 +2230,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"hardhat@npm:2.8.0":
-  version: 2.8.0
-  resolution: "hardhat@npm:2.8.0"
+"hardhat@npm:2.8.3":
+  version: 2.8.3
+  resolution: "hardhat@npm:2.8.3"
   dependencies:
     "@ethereumjs/block": ^3.6.0
     "@ethereumjs/blockchain": ^5.5.0
@@ -2279,9 +2265,9 @@ fsevents@~2.3.2:
     immutable: ^4.0.0-rc.12
     io-ts: 1.10.4
     lodash: ^4.17.11
-    merkle-patricia-tree: ^4.2.0
+    merkle-patricia-tree: ^4.2.2
     mnemonist: ^0.38.0
-    mocha: ^7.1.2
+    mocha: ^7.2.0
     node-fetch: ^2.6.0
     qs: ^6.7.0
     raw-body: ^2.4.1
@@ -2297,7 +2283,7 @@ fsevents@~2.3.2:
     ws: ^7.4.6
   bin:
     hardhat: internal/cli/cli.js
-  checksum: 6caea11941302affeb5ba3adaa86a81a5bfb8d02b9569dbad16888db6f49901962bafd7087696cd9b016b6e502e23c0a4b015178aea28a270918dfc4e84a63bc
+  checksum: 760faf9c91d5c6cb5035bf9e62d14fb52cae6a995b86195457cf1d41a1fb73c4ec1ef9c7e8e033e335495d65265a072ddef4a4b56b1cbaa94c18fc87edf91e16
   languageName: node
   linkType: hard
 
@@ -3004,21 +2990,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"merkle-patricia-tree@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "merkle-patricia-tree@npm:4.2.1"
-  dependencies:
-    "@types/levelup": ^4.3.0
-    ethereumjs-util: ^7.1.0
-    level-mem: ^5.0.1
-    level-ws: ^2.0.0
-    readable-stream: ^3.6.0
-    rlp: ^2.2.4
-    semaphore-async-await: ^1.5.1
-  checksum: d8fd29a3f183483a7e4c09b947653dc780d291ca1befa576d08109572a1d836ba1fd34e51768a9d89c073349c35b46b8e4456b5be8032ff65217c0c37c526c4e
-  languageName: node
-  linkType: hard
-
 "merkle-patricia-tree@npm:^4.2.2":
   version: 4.2.2
   resolution: "merkle-patricia-tree@npm:4.2.2"
@@ -3175,7 +3146,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mocha@npm:^7.1.2":
+"mocha@npm:^7.2.0":
   version: 7.2.0
   resolution: "mocha@npm:7.2.0"
   dependencies:
