@@ -12964,7 +12964,7 @@ __metadata:
     run-script-os: 1.1.6
     sequelize: 5.22.5
     sequelize-cli: 6.4.1
-    sequelize-typescript: 1.1.0
+    sequelize-typescript: 2.1.2
     setimmediate: 1.0.5
     stripe: 8.201.0
     supertest: 6.2.2
@@ -41751,18 +41751,17 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sequelize-typescript@npm:1.1.0":
-  version: 1.1.0
-  resolution: "sequelize-typescript@npm:1.1.0"
+"sequelize-typescript@npm:2.1.2":
+  version: 2.1.2
+  resolution: "sequelize-typescript@npm:2.1.2"
   dependencies:
-    glob: 7.1.2
+    glob: 7.2.0
   peerDependencies:
-    "@types/bluebird": "*"
     "@types/node": "*"
     "@types/validator": "*"
     reflect-metadata: "*"
-    sequelize: ^5.1.0
-  checksum: 951bf21ab25b8c8b1f0bcdd66ab2541a2a650619a0f6d4b0a18fd8b3cf4841997e1a80c227f714fd666cebda7f0a242d589c90245ea675e86183bebfccd4c884
+    sequelize: ">=6.8.0"
+  checksum: 2809fd643578a4331a7092b7fdb839b55821e2583f38ba5b77fdf3f800b8bac0967c5f75241165afc9718046b737187d8bfb06e220f030392784994935c83039
   languageName: node
   linkType: hard
 
