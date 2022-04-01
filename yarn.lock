@@ -14119,7 +14119,7 @@ __metadata:
     prettier: 2.5.1
     prop-types: 15.8.1
     react: 17.0.2
-    react-dom: 17.0.2
+    react-dom: 18.0.0
     react-test-renderer: 17.0.2
     style-loader: 3.3.1
     styled-components: 5.3.3
@@ -14170,7 +14170,7 @@ __metadata:
     react: 17.0.2
     react-bootstrap: 2.1.2
     react-bootstrap-formik: 1.7.2
-    react-dom: 17.0.2
+    react-dom: 18.0.0
     react-scripts: 5.0.0
     web-vitals: 2.1.4
     yup: 0.32.11
@@ -14331,7 +14331,7 @@ __metadata:
   peerDependencies:
     "@headlessui/react": 1.4.3
     react: 17.0.2
-    react-dom: 17.0.2
+    react-dom: 18.0.0
   languageName: unknown
   linkType: soft
 
@@ -14465,7 +14465,7 @@ __metadata:
     prop-types: 15.8.1
     qrcode.react: 1.0.1
     react: 17.0.2
-    react-dom: 17.0.2
+    react-dom: 18.0.0
     react-google-recaptcha: ^2.1.0
     react-gtm-module: 2.0.11
     react-hook-form: 7.27.1
@@ -14512,7 +14512,7 @@ __metadata:
     npm-run-all: 4.1.5
     prettier: 2.5.1
     react: 17.0.2
-    react-dom: 17.0.2
+    react-dom: 18.0.0
     react-scripts: 5.0.0
     styled-components: 5.3.3
   peerDependencies:
@@ -14605,7 +14605,7 @@ __metadata:
     prettier: 2.5.1
     raw-loader: 4.0.2
     react: 17.0.2
-    react-dom: 17.0.2
+    react-dom: 18.0.0
     react-ga: 3.3.0
     react-gtm-module: 2.0.11
     react-icons: 4.3.1
@@ -41821,16 +41821,15 @@ fsevents@~2.1.1:
   languageName: node
   linkType: soft
 
-"react-dom@npm:17.0.2":
-  version: 17.0.2
-  resolution: "react-dom@npm:17.0.2"
+"react-dom@npm:18.0.0":
+  version: 18.0.0
+  resolution: "react-dom@npm:18.0.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    scheduler: ^0.20.2
+    scheduler: ^0.21.0
   peerDependencies:
-    react: 17.0.2
-  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+    react: ^18.0.0
+  checksum: dd0ba9f2f31dd728076c892a95b2f5a8dfe79136431b0289afb46eec39d0ca6b6f0f40a60fd8aa6ef702c98ce7c26100d3d4dbc35c7c9e87429cd04f84cb58bd
   languageName: node
   linkType: hard
 
@@ -44042,6 +44041,15 @@ resolve@^2.0.0-next.3:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
   checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
+  languageName: node
+  linkType: hard
+
+"scheduler@npm:^0.21.0":
+  version: 0.21.0
+  resolution: "scheduler@npm:0.21.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: 4f8285076041ed2c81acdd1faa987f1655fdbd30554bc667c1ea64743fc74fb3a04ca7d27454b3d678735df5a230137a3b84756061b43dc5796e80701b66d124
   languageName: node
   linkType: hard
 
