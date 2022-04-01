@@ -7581,10 +7581,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openzeppelin/contracts-upgradeable@npm:4.4.2":
-  version: 4.4.2
-  resolution: "@openzeppelin/contracts-upgradeable@npm:4.4.2"
-  checksum: 016cf7b22381a1e482206bf3f9a9ee29f7a317bafefff5aab56c7184b7fc22100b54ec02aa0c3d0f24526e277d7a9a0b858d2912d702b3279bc08a6f5707db55
+"@openzeppelin/contracts-upgradeable@npm:4.5.2":
+  version: 4.5.2
+  resolution: "@openzeppelin/contracts-upgradeable@npm:4.5.2"
+  checksum: bd6a12eb83d8e3194e0847ffb248a1063668e2bf723afd21066316090de9b02e95af6057086a95fa21b0d09a2ef0ea057459bb5f5645dfff298e59e8c3267692
   languageName: node
   linkType: hard
 
@@ -7599,13 +7599,6 @@ __metadata:
   version: 3.4.1
   resolution: "@openzeppelin/contracts@npm:3.4.1"
   checksum: e42ad730179764de75ddfbca740def7f536181271e11d5276bfd750d89188a3788ee39152b6edaa0bbd66611a450e681c6a139a59e97e23b51a89bd2584a79ae
-  languageName: node
-  linkType: hard
-
-"@openzeppelin/contracts@npm:4.4.2":
-  version: 4.4.2
-  resolution: "@openzeppelin/contracts@npm:4.4.2"
-  checksum: 5c6be7bfe757c6a43eb5b24aa9c61a79deaed9de4bc5f59356b35f5519b0fb340f4da8b4df99588bded5e6b6a773fc54961917a1c657063247c1763f9752bd0e
   languageName: node
   linkType: hard
 
@@ -7629,6 +7622,22 @@ __metadata:
   bin:
     migrate-oz-cli-project: dist/scripts/migrate-oz-cli-project.js
   checksum: e9fb526b9bd278dea5e0f86d0b85008499bf753598507826ac1b6bc704da9214888e68a4c40dddd12ce86e944ae5023a31ec173fc88a299c85a6518ab26c54da
+  languageName: node
+  linkType: hard
+
+"@openzeppelin/hardhat-upgrades@npm:1.17.0":
+  version: 1.17.0
+  resolution: "@openzeppelin/hardhat-upgrades@npm:1.17.0"
+  dependencies:
+    "@openzeppelin/upgrades-core": ^1.14.1
+    chalk: ^4.1.0
+    proper-lockfile: ^4.1.1
+  peerDependencies:
+    "@nomiclabs/hardhat-ethers": ^2.0.0
+    hardhat: ^2.0.2
+  bin:
+    migrate-oz-cli-project: dist/scripts/migrate-oz-cli-project.js
+  checksum: edbfa0918023d880477f3bf86910fd71f99625cc0cb0c29a869899cf68a9f620b27302cd28ff5e3778728a0433df3090e91576e1cceb28b448a702daf686c032
   languageName: node
   linkType: hard
 
@@ -7688,23 +7697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openzeppelin/upgrades-core@npm:1.12.0":
-  version: 1.12.0
-  resolution: "@openzeppelin/upgrades-core@npm:1.12.0"
-  dependencies:
-    bn.js: ^5.1.2
-    cbor: ^8.0.0
-    chalk: ^4.1.0
-    compare-versions: ^4.0.0
-    debug: ^4.1.1
-    ethereumjs-util: ^7.0.3
-    proper-lockfile: ^4.1.1
-    solidity-ast: ^0.4.15
-  checksum: c1e3418921a10f68ceffed60b8c9c2882e59929ab8a9e6bfb097a778a39c4b176c542594f8284b3989872e372a843d8b4c2f4c553d9ce48f232ee34edb0e6458
-  languageName: node
-  linkType: hard
-
-"@openzeppelin/upgrades-core@npm:^1.13.1":
+"@openzeppelin/upgrades-core@npm:1.14.1, @openzeppelin/upgrades-core@npm:^1.13.1, @openzeppelin/upgrades-core@npm:^1.14.1":
   version: 1.14.1
   resolution: "@openzeppelin/upgrades-core@npm:1.14.1"
   dependencies:
@@ -14374,11 +14367,11 @@ __metadata:
     "@nomiclabs/hardhat-truffle5": 2.0.5
     "@nomiclabs/hardhat-waffle": 2.0.3
     "@nomiclabs/hardhat-web3": 2.0.0
-    "@openzeppelin/contracts": 4.4.2
-    "@openzeppelin/contracts-upgradeable": 4.4.2
-    "@openzeppelin/hardhat-upgrades": 1.16.1
+    "@openzeppelin/contracts": 4.5.0
+    "@openzeppelin/contracts-upgradeable": 4.5.2
+    "@openzeppelin/hardhat-upgrades": 1.17.0
     "@openzeppelin/test-helpers": 0.5.15
-    "@openzeppelin/upgrades-core": 1.12.0
+    "@openzeppelin/upgrades-core": 1.14.1
     "@uniswap/v2-core": 1.0.1
     "@uniswap/v2-periphery": 1.1.0-beta.0
     "@unlock-protocol/contracts": "workspace:./packages/contracts"
@@ -14391,14 +14384,14 @@ __metadata:
     chai: 4.3.4
     cross-fetch: 3.1.5
     debug: 4.3.4
-    eslint: 8.8.0
+    eslint: 8.12.0
     eslint-plugin-mocha: 10.0.3
     eth-gas-reporter: 0.2.24
     eth-sig-util: 2.5.4
     ethereum-waffle: 3.4.0
-    ethers: 5.5.4
+    ethers: 5.6.2
     fs-extra: 10.0.1
-    hardhat: 2.8.0
+    hardhat: 2.9.2
     hardhat-contract-sizer: 2.5.1
     hardhat-erc1820: 0.1.0
     hardhat-gas-reporter: 1.0.8
@@ -14407,7 +14400,7 @@ __metadata:
     hardlydifficult-eth: 1.1.4
     hardlydifficult-ethereum-contracts: 0.11.1
     lint-staged: 12.3.7
-    prettier: 2.5.1
+    prettier: 2.6.1
     prompt: 1.2.2
     solhint: 3.3.7
     solidity-coverage: 0.7.20
@@ -26050,7 +26043,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eth-sig-util@npm:2.5.4, eth-sig-util@npm:^2.5.2":
+"eth-sig-util@npm:2.5.4":
   version: 2.5.4
   resolution: "eth-sig-util@npm:2.5.4"
   dependencies:
@@ -26547,6 +26540,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ethers@npm:5.6.2, ethers@npm:^5.6.2":
+  version: 5.6.2
+  resolution: "ethers@npm:5.6.2"
+  dependencies:
+    "@ethersproject/abi": 5.6.0
+    "@ethersproject/abstract-provider": 5.6.0
+    "@ethersproject/abstract-signer": 5.6.0
+    "@ethersproject/address": 5.6.0
+    "@ethersproject/base64": 5.6.0
+    "@ethersproject/basex": 5.6.0
+    "@ethersproject/bignumber": 5.6.0
+    "@ethersproject/bytes": 5.6.1
+    "@ethersproject/constants": 5.6.0
+    "@ethersproject/contracts": 5.6.0
+    "@ethersproject/hash": 5.6.0
+    "@ethersproject/hdnode": 5.6.0
+    "@ethersproject/json-wallets": 5.6.0
+    "@ethersproject/keccak256": 5.6.0
+    "@ethersproject/logger": 5.6.0
+    "@ethersproject/networks": 5.6.1
+    "@ethersproject/pbkdf2": 5.6.0
+    "@ethersproject/properties": 5.6.0
+    "@ethersproject/providers": 5.6.2
+    "@ethersproject/random": 5.6.0
+    "@ethersproject/rlp": 5.6.0
+    "@ethersproject/sha2": 5.6.0
+    "@ethersproject/signing-key": 5.6.0
+    "@ethersproject/solidity": 5.6.0
+    "@ethersproject/strings": 5.6.0
+    "@ethersproject/transactions": 5.6.0
+    "@ethersproject/units": 5.6.0
+    "@ethersproject/wallet": 5.6.0
+    "@ethersproject/web": 5.6.0
+    "@ethersproject/wordlists": 5.6.0
+  checksum: 47458ba83140bff55e884ae4e7f1558b0bb3a4d90b98c002d60387cfc1fe7c5cac7a6903930880e6d7e791ebdc5409a16c634e77bcb0cc56d85ccd6b5441c7ad
+  languageName: node
+  linkType: hard
+
 "ethers@npm:^4.0.0-beta.1, ethers@npm:^4.0.20, ethers@npm:^4.0.32, ethers@npm:^4.0.40":
   version: 4.0.49
   resolution: "ethers@npm:4.0.49"
@@ -26637,44 +26668,6 @@ __metadata:
     "@ethersproject/web": 5.4.0
     "@ethersproject/wordlists": 5.4.0
   checksum: 744d58c1c46c88ea6f713ab58436c3f2e1d976691842c021c0377fb22a647eaa64c603ef52273e9de5bdbfaf2831a191c6ae9efc4e78fb571453e9b9492c32a0
-  languageName: node
-  linkType: hard
-
-"ethers@npm:^5.6.2":
-  version: 5.6.2
-  resolution: "ethers@npm:5.6.2"
-  dependencies:
-    "@ethersproject/abi": 5.6.0
-    "@ethersproject/abstract-provider": 5.6.0
-    "@ethersproject/abstract-signer": 5.6.0
-    "@ethersproject/address": 5.6.0
-    "@ethersproject/base64": 5.6.0
-    "@ethersproject/basex": 5.6.0
-    "@ethersproject/bignumber": 5.6.0
-    "@ethersproject/bytes": 5.6.1
-    "@ethersproject/constants": 5.6.0
-    "@ethersproject/contracts": 5.6.0
-    "@ethersproject/hash": 5.6.0
-    "@ethersproject/hdnode": 5.6.0
-    "@ethersproject/json-wallets": 5.6.0
-    "@ethersproject/keccak256": 5.6.0
-    "@ethersproject/logger": 5.6.0
-    "@ethersproject/networks": 5.6.1
-    "@ethersproject/pbkdf2": 5.6.0
-    "@ethersproject/properties": 5.6.0
-    "@ethersproject/providers": 5.6.2
-    "@ethersproject/random": 5.6.0
-    "@ethersproject/rlp": 5.6.0
-    "@ethersproject/sha2": 5.6.0
-    "@ethersproject/signing-key": 5.6.0
-    "@ethersproject/solidity": 5.6.0
-    "@ethersproject/strings": 5.6.0
-    "@ethersproject/transactions": 5.6.0
-    "@ethersproject/units": 5.6.0
-    "@ethersproject/wallet": 5.6.0
-    "@ethersproject/web": 5.6.0
-    "@ethersproject/wordlists": 5.6.0
-  checksum: 47458ba83140bff55e884ae4e7f1558b0bb3a4d90b98c002d60387cfc1fe7c5cac7a6903930880e6d7e791ebdc5409a16c634e77bcb0cc56d85ccd6b5441c7ad
   languageName: node
   linkType: hard
 
@@ -29379,63 +29372,6 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-"hardhat@npm:2.8.0":
-  version: 2.8.0
-  resolution: "hardhat@npm:2.8.0"
-  dependencies:
-    "@ethereumjs/block": ^3.6.0
-    "@ethereumjs/blockchain": ^5.5.0
-    "@ethereumjs/common": ^2.6.0
-    "@ethereumjs/tx": ^3.4.0
-    "@ethereumjs/vm": ^5.6.0
-    "@ethersproject/abi": ^5.1.2
-    "@sentry/node": ^5.18.1
-    "@solidity-parser/parser": ^0.14.0
-    "@types/bn.js": ^5.1.0
-    "@types/lru-cache": ^5.1.0
-    abort-controller: ^3.0.0
-    adm-zip: ^0.4.16
-    ansi-escapes: ^4.3.0
-    chalk: ^2.4.2
-    chokidar: ^3.4.0
-    ci-info: ^2.0.0
-    debug: ^4.1.1
-    enquirer: ^2.3.0
-    env-paths: ^2.2.0
-    eth-sig-util: ^2.5.2
-    ethereum-cryptography: ^0.1.2
-    ethereumjs-abi: ^0.6.8
-    ethereumjs-util: ^7.1.3
-    find-up: ^2.1.0
-    fp-ts: 1.19.3
-    fs-extra: ^7.0.1
-    glob: ^7.1.3
-    https-proxy-agent: ^5.0.0
-    immutable: ^4.0.0-rc.12
-    io-ts: 1.10.4
-    lodash: ^4.17.11
-    merkle-patricia-tree: ^4.2.0
-    mnemonist: ^0.38.0
-    mocha: ^7.1.2
-    node-fetch: ^2.6.0
-    qs: ^6.7.0
-    raw-body: ^2.4.1
-    resolve: 1.17.0
-    semver: ^6.3.0
-    slash: ^3.0.0
-    solc: 0.7.3
-    source-map-support: ^0.5.13
-    stacktrace-parser: ^0.1.10
-    true-case-path: ^2.2.1
-    tsort: 0.0.1
-    uuid: ^8.3.2
-    ws: ^7.4.6
-  bin:
-    hardhat: internal/cli/cli.js
-  checksum: 6caea11941302affeb5ba3adaa86a81a5bfb8d02b9569dbad16888db6f49901962bafd7087696cd9b016b6e502e23c0a4b015178aea28a270918dfc4e84a63bc
-  languageName: node
-  linkType: hard
-
 "hardhat@npm:2.9.0":
   version: 2.9.0
   resolution: "hardhat@npm:2.9.0"
@@ -29491,6 +29427,64 @@ fsevents@~2.1.1:
   bin:
     hardhat: internal/cli/cli.js
   checksum: 11673fa4ea2e0cb98cd663f00e7bd03b3eb28b4538da09b30179fbb3d1256133d1288cfa06351660817fc3055fec9da0200e3915dc50beb75fef149437261057
+  languageName: node
+  linkType: hard
+
+"hardhat@npm:2.9.2":
+  version: 2.9.2
+  resolution: "hardhat@npm:2.9.2"
+  dependencies:
+    "@ethereumjs/block": ^3.6.0
+    "@ethereumjs/blockchain": ^5.5.0
+    "@ethereumjs/common": ^2.6.0
+    "@ethereumjs/tx": ^3.4.0
+    "@ethereumjs/vm": ^5.6.0
+    "@ethersproject/abi": ^5.1.2
+    "@metamask/eth-sig-util": ^4.0.0
+    "@sentry/node": ^5.18.1
+    "@solidity-parser/parser": ^0.14.1
+    "@types/bn.js": ^5.1.0
+    "@types/lru-cache": ^5.1.0
+    abort-controller: ^3.0.0
+    adm-zip: ^0.4.16
+    aggregate-error: ^3.0.0
+    ansi-escapes: ^4.3.0
+    chalk: ^2.4.2
+    chokidar: ^3.4.0
+    ci-info: ^2.0.0
+    debug: ^4.1.1
+    enquirer: ^2.3.0
+    env-paths: ^2.2.0
+    ethereum-cryptography: ^0.1.2
+    ethereumjs-abi: ^0.6.8
+    ethereumjs-util: ^7.1.3
+    find-up: ^2.1.0
+    fp-ts: 1.19.3
+    fs-extra: ^7.0.1
+    glob: ^7.1.3
+    immutable: ^4.0.0-rc.12
+    io-ts: 1.10.4
+    lodash: ^4.17.11
+    merkle-patricia-tree: ^4.2.2
+    mnemonist: ^0.38.0
+    mocha: ^9.2.0
+    p-map: ^4.0.0
+    qs: ^6.7.0
+    raw-body: ^2.4.1
+    resolve: 1.17.0
+    semver: ^6.3.0
+    slash: ^3.0.0
+    solc: 0.7.3
+    source-map-support: ^0.5.13
+    stacktrace-parser: ^0.1.10
+    true-case-path: ^2.2.1
+    tsort: 0.0.1
+    undici: ^4.14.1
+    uuid: ^8.3.2
+    ws: ^7.4.6
+  bin:
+    hardhat: internal/cli/cli.js
+  checksum: bbee86d43e85a7a841f8b6a6d7bc6609fa2f052db75cbc131eb40e770744f847ca5ed5211314219c90a375f065c987cfd79e0167bfd84c8b674aa2963c94f1a6
   languageName: node
   linkType: hard
 
@@ -36037,21 +36031,6 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-"merkle-patricia-tree@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "merkle-patricia-tree@npm:4.2.1"
-  dependencies:
-    "@types/levelup": ^4.3.0
-    ethereumjs-util: ^7.1.0
-    level-mem: ^5.0.1
-    level-ws: ^2.0.0
-    readable-stream: ^3.6.0
-    rlp: ^2.2.4
-    semaphore-async-await: ^1.5.1
-  checksum: d8fd29a3f183483a7e4c09b947653dc780d291ca1befa576d08109572a1d836ba1fd34e51768a9d89c073349c35b46b8e4456b5be8032ff65217c0c37c526c4e
-  languageName: node
-  linkType: hard
-
 "merkle-patricia-tree@npm:^4.2.2":
   version: 4.2.2
   resolution: "merkle-patricia-tree@npm:4.2.2"
@@ -36921,7 +36900,7 @@ fsevents@~2.1.1:
   languageName: node
   linkType: hard
 
-"mocha@npm:^7.1.1, mocha@npm:^7.1.2":
+"mocha@npm:^7.1.1":
   version: 7.2.0
   resolution: "mocha@npm:7.2.0"
   dependencies:
